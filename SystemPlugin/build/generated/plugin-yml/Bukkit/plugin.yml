@@ -1,0 +1,39 @@
+name: SystemPlugin
+version: 1.0-Beta
+main: de.kamiql.Main
+load: STARTUP
+authors:
+  - kamiql
+contributors:
+  - PommesKiwi
+  - la0an
+prefix: SystemPlugin
+libraries:
+  - org.mongodb:mongodb-driver-legacy:4.5.1
+commands:
+  feed:
+    description: Feed yourself!
+    permission: system.commands.feed
+    usage: /feed
+  hat:
+    description: Set an item on your head!
+    permission: system.commands.hat
+    usage: /hat
+  heal:
+    description: Heal yourself!
+    permission: system.commands.heal
+    usage: /heal
+  invsee:
+    description: See someones inventory!
+    permission: system.commands.invsee
+    usage: /invsee <player>
+  vanish:
+    description: Toggle Vanish!
+    permission: system.commands.vanish
+    usage: /vanish
+  warp:
+    description: Set Admin warps!
+    permission: system.commands.warp
+    usage: "/warp <add/remove/update/tp <> tp: name> <name>"
+api-version: "1.13"
+folia-supported: true

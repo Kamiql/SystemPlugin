@@ -1,0 +1,61 @@
+BroadcastMessages:
+  # On/Off toggle
+  enabled: true
+  # Message Delay in sek
+  delay: 1
+  # Nachrichten Liste
+  messages:
+    - '&7Testnachricht NR 0'
+    - '&7Testnachricht NR 1'
+    - '&7Testnachricht NR 2'
+
+DataBase:
+  connection:
+    string: ""
+    database: ""
+    collection: ""
+
+Welcomer:
+
+  # PLACEHOLDER:
+  # {name} -> Playername
+  # {nick} -> Displayname
+  # {time:<format>} -> Formatted time
+
+  enabled: true
+
+  join:
+    broadcast:
+      enabled: true
+      before:
+        message:
+          - "&7[&a+&7] {name} &8{time:HH:mm}"
+      firstjoin:
+        message:
+          - "&8--------------------"
+          - "&7{name} ist das erste mal hier!"
+          - "&8--------------------"
+    player:
+      enabled: true
+      before:
+        message:
+          - "&8--------------------"
+          - "&7Willkommen zurück &b{name}&f!"
+          - "&8--------------------"
+      firstjoin:
+        message:
+          - "&8&l--------------------"
+          - "&7Willkommen auf dem Server &b&l{name}&f!"
+          - "&7Bei fragen kannst du dich an das &bTeam &7wenden."
+          - "&8&l--------------------"
+  leave:
+    broadcast:
+      enabled: true
+      message: "&7[&c-&7] {name} &8{time:HH:mm}"
+
+Cooldown_Commands:
+  # in sek
+  heal:
+    cooldown: 300
+  feed:
+    cooldown: 180
