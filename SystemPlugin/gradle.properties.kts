@@ -1,0 +1,2 @@
+gpr.user=kamiql
+gpr.token=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
